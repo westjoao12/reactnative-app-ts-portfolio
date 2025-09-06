@@ -7,9 +7,12 @@ export const styles = StyleSheet.create({
         marginBottom: 10
     },
     imgProfile:{    
-        width: 150,
-        height: 150,
+        width: 160,
+        height: 160,
         borderRadius: 150,
-        resizeMode: "stretch"
+        resizeMode: "stretch",
+
+        borderColor: '#66FCF1',
+        borderWidth: 2
     }
 })
