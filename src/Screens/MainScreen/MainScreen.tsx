@@ -3,25 +3,9 @@ import {styles} from './MainScreenStyle'
 import { StatusBar } from 'expo-status-bar';
 import { ImageProfile } from '../../components/ImageProfile/ImageProfile';
 import { ButtonSocialMedia } from '../../components/ButtonSocialMedia/ButtonSocialMedia';
+import { myProfileData } from '../../Services/myProfileData';
 
-
-const myProfile = {
-    nome: 'WEST JOÃO',
-    socialMedia: {
-        linkedin:{
-            nome: 'LINKEDIN',
-            lnk: 'https://www.linkedin.com/in/westjoao12'
-        },
-         github:{
-            nome: 'GITHUB',
-            lnk: 'https://github.com/westjoao12'
-        },
-         email:{
-            nome: 'FACEBOOK',
-            lnk: 'https://www.facebook.com/westjoao.afonso'
-        }
-    }
-}
+const myProfile = myProfileData;
 
 export const MainScreen = () =>{
 
