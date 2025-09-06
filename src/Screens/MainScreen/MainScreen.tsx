@@ -15,9 +15,12 @@ export const MainScreen = () =>{
             <ImageProfile/>
             <Text style={styles.txt}>{myProfile.nome}</Text>
 
-            <ButtonSocialMedia linkSocial={myProfile.socialMedia.linkedin.lnk} texto={myProfile.socialMedia.linkedin.nome} />
-            <ButtonSocialMedia linkSocial={myProfile.socialMedia.github.lnk} texto={myProfile.socialMedia.github.nome} />
-            <ButtonSocialMedia linkSocial={myProfile.socialMedia.email.lnk} texto={myProfile.socialMedia.email.nome} />
+            {myProfile.socialMedia.map((mp) => 
+                (
+                    <ButtonSocialMedia key={mp.type} linkSocial={mp.lnk} texto={mp.nome} />
+                )
+            )}
+            
             <StatusBar style='auto'/>
         </View>
     );
