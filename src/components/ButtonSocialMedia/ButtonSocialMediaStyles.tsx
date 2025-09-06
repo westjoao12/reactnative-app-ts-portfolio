@@ -4,11 +4,12 @@ export const styles = StyleSheet.create({
     btn: {
         backgroundColor: 'rgba(31, 40, 51, 0.5)',
         borderColor: '#45A29E',
-        borderWidth: 2,
+        borderRadius: 5,
+        borderWidth: 3,
         elevation: 3,
 
-        width: '80%',
-        height: 50
+        width: '75%',
+        height: 60
     },
     txt: {
         flex: 1,
