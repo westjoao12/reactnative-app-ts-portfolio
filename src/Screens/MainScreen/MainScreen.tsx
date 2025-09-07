@@ -3,9 +3,9 @@ import {styles} from './MainScreenStyle'
 import { StatusBar } from 'expo-status-bar';
 import { ImageProfile } from '../../components/ImageProfile/ImageProfile';
 import { ButtonSocialMedia } from '../../components/ButtonSocialMedia/ButtonSocialMedia';
-import { myProfileData } from '../../Services/myProfileData';
+import * as repository from '../../Services/myProfileData';
 
-const myProfile = myProfileData;
+const myProfile =  repository.getProfileData();
 
 export const MainScreen = () =>{
 

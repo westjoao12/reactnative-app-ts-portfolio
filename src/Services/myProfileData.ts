@@ -1,4 +1,4 @@
-export const myProfileData = {
+const myProfileData = {
     nome: 'WEST JOÃO',
     socialMedia: [
         {
@@ -17,4 +17,8 @@ export const myProfileData = {
             lnk: 'https://www.facebook.com/westjoao.afonso'
         }
     ]
+}
+
+export const getProfileData = () => {
+    return  myProfileData;
 }
